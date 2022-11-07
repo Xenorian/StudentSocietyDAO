@@ -16,8 +16,8 @@ contract StudentSocietyDAO {
     // MyERC20
     MyERC20 public studentERC20;
 
-    function get_balance() external view returns(uint32){
-        return uint32(studentERC20.balanceOf(msg.sender));
+    function get_balance(address addr) external view returns(uint32){
+        return uint32(studentERC20.balanceOf(addr));
     }
 
     mapping(address => bool) claimedMap;
@@ -150,7 +150,7 @@ contract StudentSocietyDAO {
                 proposals[i].active = false;
                 //update the state
                 (passTimes[proposals[i].proposer])++;
-                studentERC20.bonus(proposals[i].proposer, proposals[i].agree+proposals[i].disagree-1);
+                studentERC20.bonus(proposals[i].proposer, proposals[i].agree+proposals[i].disagree);
                 active_index++;
             }
         }

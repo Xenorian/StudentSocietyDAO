@@ -49,7 +49,7 @@ const initCheckAccounts = async () => {
         const accounts = await web3.eth.getAccounts()
         if(accounts && accounts.length) {
             AccountAddr.editAccountAddr(accounts[0]);
-            let ab = await DAOContract.methods.get_balance().call();
+            let ab = await DAOContract.methods.get_balance(AccountAddr.AccountAddr).call();
             AccountAddr.editAccountBalance(ab);
         }
     }

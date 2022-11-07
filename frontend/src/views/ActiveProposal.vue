@@ -41,7 +41,7 @@
     async setup() {
       const getAccountInfo = async () => {
       if (DAOContract) {
-          let ab = await DAOContract.methods.get_balance().call()
+          let ab = await DAOContract.methods.get_balance(AccountAddr.AccountAddr).call()
           AccountAddr.editAccountBalance(ab)
       } else {
           alert('Contract not exists.')
