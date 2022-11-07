@@ -47,6 +47,8 @@
    ```bash
    npm run start
    ```
+8. 在MetaMask中添加有效账户
+9. 开始使用
 
 ## 功能实现分析
 
