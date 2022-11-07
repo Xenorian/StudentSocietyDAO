@@ -168,7 +168,7 @@ contract StudentSocietyDAO {
             duration : default_duration,
             name : m_name,
             content : m_content,
-            agree : 1,
+            agree : 0,
             disagree : 0,
             existence: true,
             active: true
