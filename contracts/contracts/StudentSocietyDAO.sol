@@ -174,7 +174,7 @@ contract StudentSocietyDAO {
             active: true
         });
 
-        ((voteTimes[global_index])[msg.sender])++;
+        //((voteTimes[global_index])[msg.sender])++;
         global_index=global_index+1;
     }
 
@@ -182,11 +182,11 @@ contract StudentSocietyDAO {
     function vote(uint32 m_index,bool agree) public{
         stateCheck();
         require(proposals[m_index].existence == true, "no such proposal");
-        require((voteTimes[global_index])[msg.sender] < vote_limit, "exceed vote times limit");
+        require((voteTimes[m_index])[msg.sender] < vote_limit, "exceed vote times limit");
         require(studentERC20.balanceOf(msg.sender) > 0, "balance is not enough");
         require(proposals[m_index].active == true, "proposal is finished");
 
-        ((voteTimes[global_index])[msg.sender])++;
+        ((voteTimes[m_index])[msg.sender])++;
         studentERC20.burn(msg.sender,1);
         if(agree){
             (proposals[m_index].agree)++;
