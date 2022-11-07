@@ -150,7 +150,9 @@ contract StudentSocietyDAO {
                 proposals[i].active = false;
                 //update the state
                 (passTimes[proposals[i].proposer])++;
-                studentERC20.bonus(proposals[i].proposer, proposals[i].agree+proposals[i].disagree);
+                if(proposals[i].agree>proposals[i].disagree){
+                    studentERC20.bonus(proposals[i].proposer, proposals[i].agree+proposals[i].disagree);
+                }
                 active_index++;
             }
         }

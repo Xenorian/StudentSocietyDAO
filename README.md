@@ -119,7 +119,19 @@
 ## 项目运行截图
 
 1. 连接钱包
-
+![1.png](https://s2.loli.net/2022/11/07/5IDTzAF9aYB7e1q.png)
+2. 领取初始积分
+![2.png](https://s2.loli.net/2022/11/07/a5Zetj9lrhqNbKY.png)
+3. 新建提案
+![3.png](https://s2.loli.net/2022/11/07/yluU7iLKgH1ePk2.png)
+4. 投赞同/反对票
+![4.png](https://s2.loli.net/2022/11/07/lBOmpuRZkoKqxeg.png)
+5. 查看已完成提案
+![5.png](https://s2.loli.net/2022/11/07/UvYsuXRNZfj1cTo.png)
+6. 领取纪念品
+![6.png](https://s2.loli.net/2022/11/07/ZIibL3KcAEOkSsB.png)
+7. 查看纪念品
+![7.png](https://s2.loli.net/2022/11/07/QjZX3gdKOGuDYez.png)
    
 
 ## 参考内容
